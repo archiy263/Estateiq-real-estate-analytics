@@ -1,172 +1,248 @@
-# 🏛️ EstateIQ — Real Estate Analytics & Property Valuation
+# 🏛️ EstateIQ
 
-> An end-to-end real estate analytics platform combining data quality, EDA, SQL market intelligence, machine learning, and an interactive Streamlit valuation dashboard.
+### Real Estate Analytics & Property Valuation Platform
 
 <p align="center">
-  <a href="https://estateiq-real-estate-analytics-aygg3xukbui6tevqxrrts3.streamlit.app/">
-    <img src="https://img.shields.io/badge/🚀%20Live%20Dashboard-View%20EstateIQ-FF4B4B?style=for-the-badge" alt="Live Dashboard">
-  </a>
+  <strong>From raw property listings to market intelligence and ML-powered valuation.</strong>
 </p>
 
 <p align="center">
   <a href="https://estateiq-real-estate-analytics-aygg3xukbui6tevqxrrts3.streamlit.app/">
-    <strong>🔴 Open Live EstateIQ Dashboard →</strong>
+    <img src="https://img.shields.io/badge/🚀%20LIVE%20DASHBOARD-Visit%20EstateIQ-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Dashboard">
   </a>
 </p>
 
-## 🌐 Live Dashboard
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/SQL-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQL">
+  <img src="https://img.shields.io/badge/ML-Random%20Forest-2F6BFF?style=flat-square" alt="Machine Learning">
+  <img src="https://img.shields.io/badge/Dashboard-Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit">
+  <img src="https://img.shields.io/badge/Visualization-Plotly%20%7C%20Seaborn-4B8BBE?style=flat-square" alt="Visualization">
+</p>
 
-Explore the deployed EstateIQ application:
+---
+
+## ✦ Overview
+
+**EstateIQ** is an end-to-end real-estate analytics and machine-learning project built around **22,139 property records across 17 locations and 8 property categories**.
+
+The project goes beyond simply training a prediction model. It combines **data cleaning, exploratory analysis, SQL market intelligence, statistical analysis, machine learning, model interpretation, and an interactive Streamlit dashboard** into one complete workflow.
+
+> **Data Quality → EDA → SQL → Business Insights → ML → Valuation → Dashboard**
+
+---
+
+## 🚀 Live Application
+
+### Explore EstateIQ in the browser
 
 <p align="center">
   <a href="https://estateiq-real-estate-analytics-aygg3xukbui6tevqxrrts3.streamlit.app/">
-    <img src="https://img.shields.io/badge/🚀%20Launch%20EstateIQ%20Dashboard-FF4B4B?style=for-the-badge" alt="Launch EstateIQ Dashboard">
+    <img src="https://img.shields.io/badge/OPEN%20LIVE%20APPLICATION-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Open Live Application">
   </a>
 </p>
 
-The live dashboard provides an interactive view of:
+The deployed dashboard brings the project's analytical and machine-learning components together in one interface.
 
-- 🏠 Property valuation
-- 📊 Market analytics
-- 📍 City-level pricing
-- 🏢 Property-type analysis
-- 📐 Area and price relationships
-- 🛏️ Bedroom-level analysis
-- 🤖 Model performance
-- 🔎 Feature importance
-- 💡 Data-driven market insights
+**Available in the dashboard:**
 
-**Live Application:**  
-https://estateiq-real-estate-analytics-aygg3xukbui6tevqxrrts3.streamlit.app/        
+- Market overview and supply analysis
+- City-level pricing
+- Property-type analysis
+- Area and price relationships
+- Bedroom-level analysis
+- EDA-driven market insights
+- Interactive property valuation
+- Model performance
+- Feature importance
 
-## ✨ Highlights
+**[→ Launch EstateIQ Live Dashboard](https://estateiq-real-estate-analytics-aygg3xukbui6tevqxrrts3.streamlit.app/)**
 
-- 📊 Analysis of **22,139 property records**
-- 📍 **17 locations** and **8 property categories**
-- 🧹 Data cleaning, validation, and area outlier treatment
-- 🗄️ SQLite database and reusable SQL analytics
-- 📈 Professional EDA and market visualizations
-- 🤖 Random Forest property valuation
-- 🖥️ Interactive Streamlit dashboard
-- 💡 Business-focused market insights
-- 🔎 Model feature-importance analysis
-- 💾 Reproducible processed dataset and saved ML pipeline
+---
 
-## 📌 Dataset Snapshot
+## 📊 Project at a Glance
 
-| Metric | Value |
-|---|---:|
-| Property Records | **22,139** |
-| Locations | **17** |
-| Property Types | **8** |
-| Unique Property IDs | **22,139** |
-| Duplicate Records | **0** |
-| Valid Area Records | **22,139** |
-| Valid Price Records | **22,139** |
-| Average Area | **1,961 sq.ft.** |
-| Area Range | **33–45,000 sq.ft.** |
-| Price Range | **₹1–₹35,000 / sq.ft.** |
+| Dataset | Market Coverage | Model | Validation |
+|:---|:---|:---|:---|
+| **22,139** listings | **17** locations | **Random Forest** | **R² 0.6132** |
+| **8** property types | Multi-city | Regression | **MAE ₹2,593.72** |
+| **0** duplicate IDs | Property-level data | Price / sq.ft. | **RMSE ₹3,948.72** |
 
-### Largest Segments
+---
 
-**Locations**
-- Gurgaon — 8,486 listings
-- Hyderabad — 5,884
-- Kolkata South — 2,395
-- Kolkata East — 1,501
-- Kolkata North — 1,128
+## 🎯 What the Project Answers
 
-**Property Types**
-- Residential Apartment — 16,226
-- Residential Land — 2,665
-- Independent/Builder Floor — 2,096
-- Independent House/Villa — 1,071
+EstateIQ is designed around practical real-estate questions:
 
-## 🔄 Project Workflow
+- Where is property supply concentrated?
+- Which locations have the highest observed price per sq.ft.?
+- Which property categories dominate the market?
+- How does property size relate to price?
+- How does bedroom configuration relate to pricing?
+- How does pricing vary across city and property type?
+- Which features provide the strongest signals to the valuation model?
+- Can property characteristics be used to estimate indicative price per sq.ft.?
 
-```text
-Raw Property Data
-        ↓
-Data Cleaning & Validation
-        ↓
-Feature Preparation
-        ↓
-Exploratory Data Analysis
-        ↓
-SQLite Database
-        ↓
-SQL Market Analysis
-        ↓
-Business Insights
-        ↓
-Machine Learning
-        ↓
-Property Valuation Model
-        ↓
-Streamlit Dashboard
-```
+---
 
-## 🧹 Data Quality
+# 🔎 Key Market Insights
 
-The project validates:
+### Supply
 
-- Record counts
-- Duplicate property IDs
-- Missing analytical fields
-- Numeric ranges
-- Invalid area and price values
-- City distribution
-- Property-type distribution
-- Extreme observations
+**Gurgaon** leads the dataset with **8,486 listings**, followed by **Hyderabad with 5,884**.
 
-Final validation:
+### Market Composition
 
-- **22,139 valid AREA records**
-- **22,139 valid PRICE_SQFT records**
-- **0 duplicate property IDs**
+**Residential Apartment** is the dominant category with **16,226 listings**, representing approximately **73.29%** of the dataset.
 
-Area outliers are handled during the cleaning stage. The cleaned `AREA` is then passed to the ML workflow without a second clipping operation.
+### Pricing
 
-## 📊 Market Intelligence
+The dataset shows substantially higher observed median price/sq.ft. levels in several **Mumbai locations** compared with the analyzed **Kolkata markets**.
 
-SQL and notebook analysis cover:
+### Typical Listing
 
-- City pricing
-- Median and average price/sq.ft.
-- Market share
-- Property-type pricing
-- Area distributions
-- Bedroom and bathroom patterns
-- City/property-type combinations
-- Price premiums
-- Price indices
-- Opportunity scoring
-- Business-oriented market segments
+The dataset has a median observed price of approximately **₹9,333/sq.ft.** and a median property area of approximately **1,585 sq.ft.**
 
-### Selected Findings
+---
 
-- Gurgaon represents **38.33%** of the dataset.
-- Hyderabad represents **26.58%**.
-- Residential Apartments represent **73.29%** of records.
-- Mumbai locations generally show higher observed price/sq.ft. levels than the analyzed Kolkata markets.
-- Residential Land has a higher median observed price/sq.ft. than Residential Apartments in this dataset.
+# 📈 Visual Market Analysis
 
-## 🤖 Machine Learning
+The project includes a focused collection of presentation-ready visualizations. Each chart is generated independently and stored as a PNG for documentation, portfolio presentation, and README use.
 
-EstateIQ uses a **Random Forest regression pipeline** to estimate indicative property price/sq.ft.
+### 01 · Market Supply by City
+
+<p align="center">
+  <img src="notebooks/assets/charts/01_market_supply_by_city.png" width="900" alt="Market Supply by City">
+</p>
+
+Shows how property listings are distributed across the analyzed locations.
+
+---
+
+### 02 · Median Property Price by City
+
+<p align="center">
+  <img src="notebooks/assets/charts/02_median_price_by_city.png" width="900" alt="Median Property Price by City">
+</p>
+
+Compares observed median price per square foot across locations.
+
+---
+
+### 03 · Property Market Composition
+
+<p align="center">
+  <img src="notebooks/assets/charts/03_property_market_composition.png" width="900" alt="Property Market Composition">
+</p>
+
+Highlights the relative size of each property category within the dataset.
+
+---
+
+### 04 · Property Price Distribution
+
+<p align="center">
+  <img src="notebooks/assets/charts/04_price_distribution.png" width="900" alt="Property Price Distribution">
+</p>
+
+Shows how observed price per square foot is distributed across the dataset.
+
+---
+
+### 05 · Area vs. Price
+
+<p align="center">
+  <img src="notebooks/assets/charts/05_area_price_density.png" width="900" alt="Area versus Price">
+</p>
+
+Explores the relationship between property area and observed price per square foot.
+
+---
+
+### 06 · Bedroom-Level Market Comparison
+
+<p align="center">
+  <img src="notebooks/assets/charts/06_bedroom_market_comparison.png" width="900" alt="Bedroom Market Comparison">
+</p>
+
+Compares listing volume and observed median pricing across bedroom configurations.
+
+---
+
+### 07 · City × Property Type Pricing Matrix
+
+<p align="center">
+  <img src="notebooks/assets/charts/07_city_property_type_matrix.png" width="900" alt="City Property Type Pricing Matrix">
+</p>
+
+Combines location and property category to reveal differences in observed pricing.
+
+---
+
+### 08 · Model Feature Importance
+
+<p align="center">
+  <img src="notebooks/assets/charts/08_model_feature_importance.png" width="900" alt="Model Feature Importance">
+</p>
+
+Shows the relative contribution of features used by the Random Forest valuation pipeline.
+
+---
+
+# 🧠 Exploratory Data Analysis
+
+The EDA is organized around questions and decisions rather than isolated visualizations.
+
+### Market Structure
+
+**Which location has the largest supply?**
+
+Gurgaon leads the dataset with **8,486 listings**, representing approximately **38.33%** of all observations.
+
+**Which property type dominates?**
+
+Residential Apartment leads with **16,226 listings**, representing approximately **73.29%** of the dataset.
+
+### Pricing
+
+**Where is pricing most expensive?**
+
+Mumbai South West has the highest observed city median at approximately **₹31,111/sq.ft.**, while Kolkata West is the lowest at approximately **₹2,700/sq.ft.**
+
+### Property Configuration
+
+**What is the most common known bedroom configuration?**
+
+**3 BHK** is the largest known bedroom segment, accounting for approximately **46.4%** of records with known bedroom counts.
+
+### Relationship Analysis
+
+**Does larger area automatically mean a higher ₹/sq.ft.?**
+
+Not necessarily. The raw area-price relationship is limited, with a Pearson correlation of approximately **0.11**. This supports using additional property and location features rather than relying on area alone.
+
+---
+
+# 🤖 Machine Learning
+
+## Random Forest Property Valuation
+
+EstateIQ uses a **Random Forest regression pipeline** to estimate an indicative **price per square foot**.
 
 ### Model Features
 
-- City
-- Property Type
-- Bedrooms
-- Bathrooms
-- Balconies
-- Floor
-- Total Floors
-- Area
+| Feature | Role |
+|:---|:---|
+| City | Location signal |
+| Property Type | Property-category signal |
+| Area | Property-size signal |
+| Bedrooms | Configuration signal |
+| Bathrooms | Configuration signal |
+| Balconies | Property attribute |
+| Floor | Position signal |
+| Total Floors | Building structure signal |
 
-### Valuation
+### Valuation Logic
 
 ```text
 Predicted Price / sq.ft.
@@ -176,136 +252,53 @@ Predicted Price / sq.ft.
 Estimated Property Value
 ```
 
-### Current Model Benchmark
+### Model Benchmark
 
 | Metric | Result |
-|---|---:|
+|:---|---:|
+| Model | **Random Forest** |
 | R² | **0.6132** |
-| MAE | **₹2,593.72** |
-| RMSE | **₹3,948.72** |
+| Validation MAE | **₹2,593.72** |
+| Validation RMSE | **₹3,948.72** |
 
-These are model evaluation metrics, not a guarantee of actual market value.
+These metrics describe model performance on validation data and are not a guarantee of actual market value.
 
-## 🖥️ Streamlit Dashboard
+---
 
-Run:
+# 💡 Model Intelligence
 
-```bash
-streamlit run app.py
-```
+The feature-importance analysis provides an interpretable view of the signals used by the valuation model.
 
-The dashboard provides:
+The current model indicates that **location and property structure** are important contributors to predicted price/sq.ft., with **City, Total Floors, Area, and Property Type** among the stronger model signals.
 
-- Interactive property inputs
-- Indicative price prediction
-- Estimated total property value
-- City-level market analysis
-- Property-type comparison
-- Area vs. price analysis
-- Bedroom-level pricing
-- Price-band analysis
-- Model feature importance
-- Interactive Plotly visualizations
+---
 
-## 📊 Market Analytics
+# 🗄️ SQL Market Intelligence
 
-EstateIQ uses a focused set of visualizations to explain market supply, pricing, property composition, feature relationships, and model behavior.
+EstateIQ uses SQLite to turn the processed dataset into reusable analytical queries.
 
-### 🏙️ Market Supply by City
+### Analysis Areas
 
-<p align="center">
-  <img src="notebooks/assets/charts/01_market_supply_by_city.png" width="900">
-</p>
+- Data quality checks
+- Price quality checks
+- Market analysis
+- Location analysis
+- Property analysis
+- Business insights
 
-Gurgaon and Hyderabad account for the largest share of property listings in the dataset, providing the strongest representation of the analyzed markets.
-
-### 💰 Median Property Price by City
-
-<p align="center">
-  <img src="notebooks/assets/charts/02_median_price_by_city.png" width="900">
-</p>
-
-The city-level comparison highlights substantial differences in observed median price per square foot across locations.
-
-### 🏢 Property Market Composition
-
-<p align="center">
-  <img src="notebooks/assets/charts/03_property_market_composition.png" width="900">
-</p>
-
-Residential Apartments form the dominant property category, followed by Residential Land and Independent/Builder Floor listings.
-
-### 📈 Property Price Distribution
-
-<p align="center">
-  <img src="notebooks/assets/charts/04_price_distribution.png" width="900">
-</p>
-
-The distribution shows how observed property prices are concentrated across different price-per-square-foot ranges.
-
-### 📐 Area vs. Price Relationship
-
-<p align="center">
-  <img src="notebooks/assets/charts/05_area_price_density.png" width="900">
-</p>
-
-The visualization explores the relationship between property area and observed price per square foot across the dataset.
-
-### 🛏️ Bedroom-Level Market Comparison
-
-<p align="center">
-  <img src="notebooks/assets/charts/06_bedroom_market_comparison.png" width="900">
-</p>
-
-Bedroom-level analysis compares market supply and median pricing across different bedroom configurations.
-
-### 🗺️ City × Property Type Pricing Matrix
-
-<p align="center">
-  <img src="notebooks/assets/charts/07_city_property_type_matrix.png" width="900">
-</p>
-
-The matrix highlights how observed median prices vary simultaneously by location and property category.
-
-### 🤖 Model Feature Importance
-
-<p align="center">
-  <img src="notebooks/assets/charts/08_model_feature_importance.png" width="900">
-</p>
-
-The model analysis shows which property and location features contribute most strongly to the Random Forest valuation model.
-## 📈 Visual Analytics
-
-Presentation-ready charts are stored in:
-
-```text
-notebooks/assets/charts/
-```
-
-The main analytical visuals include:
-
-- City price comparison
-- Property-type market composition
-- Area vs. price relationship
-- Bedroom-level price analysis
-- Price-band distribution
-- Model feature importance
-
-## 🗄️ SQL Analytics
-
-Database:
+### Database
 
 ```text
 data/estateiq.db
 ```
 
-Main table:
+### Main Table
 
 ```text
 estateiq_processed
 ```
 
-SQL files:
+### SQL Modules
 
 ```text
 sql/
@@ -317,18 +310,133 @@ sql/
 └── 05_business_insights.sql
 ```
 
-Run them with:
+Run an analysis with:
 
 ```powershell
-python run_sql.py 01_data_quality.sql
-python run_sql.py 01b_price_quality.sql
 python run_sql.py 02_market_analysis.sql
-python run_sql.py 03_location_analysis.sql
-python run_sql.py 04_property_analysis.sql
-python run_sql.py 05_business_insights.sql
 ```
 
-## 📂 Project Structure
+---
+
+# 🧹 Data Quality & Preparation
+
+The data preparation stage validates:
+
+- Record counts
+- Duplicate property IDs
+- Missing analytical fields
+- Numeric ranges
+- Area validity
+- Price validity
+- City distribution
+- Property-type distribution
+- Extreme observations
+
+### Final Validation
+
+```text
+22,139 valid AREA records
+22,139 valid PRICE_SQFT records
+0 duplicate property IDs
+```
+
+Area outliers are handled during the cleaning stage. The cleaned `AREA` is then passed into the ML workflow without a second clipping operation.
+
+---
+
+# 🖥️ Interactive Dashboard
+
+The Streamlit application brings market analytics and property valuation together in a single interface.
+
+### Market Analytics
+
+- City-level market supply
+- City-level pricing
+- Property-type comparison
+- Area vs. price analysis
+- Bedroom-level analysis
+- Price-band analysis
+- Interactive Plotly visualizations
+
+### Property Valuation
+
+Users can enter:
+
+```text
+City
+Property Type
+Area
+Bedrooms
+Bathrooms
+Balconies
+Floor
+Total Floors
+```
+
+The model then produces an indicative:
+
+```text
+Predicted Price / sq.ft.
+          ×
+     Property Area
+          =
+Estimated Property Value
+```
+
+### Model Intelligence
+
+The dashboard presents:
+
+- Model performance metrics
+- Validation MAE and RMSE
+- Explained variation
+- Feature importance
+- Major model signals
+
+### Try It Live
+
+**[Open the EstateIQ Dashboard →](https://estateiq-real-estate-analytics-aygg3xukbui6tevqxrrts3.streamlit.app/)**
+
+---
+
+# 🔄 End-to-End Workflow
+
+```text
+                    RAW PROPERTY DATA
+                           │
+                           ▼
+                DATA CLEANING & VALIDATION
+                           │
+                           ▼
+                 FEATURE PREPARATION
+                           │
+                           ▼
+                  EXPLORATORY ANALYSIS
+                           │
+                ┌──────────┴──────────┐
+                ▼                     ▼
+          SQL ANALYTICS        VISUAL ANALYTICS
+                │                     │
+                └──────────┬──────────┘
+                           ▼
+                    BUSINESS INSIGHTS
+                           │
+                           ▼
+                  RANDOM FOREST MODEL
+                           │
+                           ▼
+                   PRICE / SQ.FT.
+                           │
+                           ▼
+                  PROPERTY VALUATION
+                           │
+                           ▼
+                 STREAMLIT DASHBOARD
+```
+
+---
+
+# 📂 Project Structure
 
 ```text
 EstateIQ-real-estate-analytics/
@@ -367,39 +475,50 @@ EstateIQ-real-estate-analytics/
     ├── 03_location_analysis.sql
     ├── 04_property_analysis.sql
     └── 05_business_insights.sql
-```        
-## ⚙️ Installation
+```
 
-### 1. Clone
+---
+
+# ⚙️ Getting Started
+
+## 1. Clone the repository
 
 ```bash
 git clone <YOUR_GITHUB_REPOSITORY_URL>
 cd EstateIQ-real-estate-analytics
 ```
 
-### 2. Create environment
+## 2. Create a virtual environment
 
-**Windows**
+### Windows
 
 ```powershell
 python -m venv .venv
 .venv\Scripts\activate
 ```
 
-**macOS / Linux**
+### macOS / Linux
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### 3. Install dependencies
+## 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 🗃️ Rebuild Database
+## 4. Launch the application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+# 🗃️ Rebuild the Database
 
 After updating the processed dataset:
 
@@ -413,58 +532,12 @@ The SQLite database will be created at:
 data/estateiq.db
 ```
 
-## 📊 Analytical Questions
+---
 
-EstateIQ focuses on practical questions such as:
+# 🧰 Technology Stack
 
-### Market
-**Which locations have the highest listing volume?**
-
-Gurgaon and Hyderabad dominate the analyzed dataset.
-
-### Pricing
-**Which locations have higher observed price levels?**
-
-Mumbai locations generally show substantially higher observed price/sq.ft. levels than the analyzed Kolkata locations.
-
-### Property Type
-**What is the dominant property category?**
-
-Residential Apartment is the dominant category, accounting for more than 16,000 records.
-
-### Configuration
-**How does bedroom count relate to property size and pricing?**
-
-Higher-bedroom configurations generally correspond to larger average areas and often higher observed price/sq.ft., although the relationship is not perfectly linear.
-
-### Valuation
-**Can property characteristics be used to estimate price?**
-
-Yes. The Random Forest model learns patterns between property characteristics and observed price/sq.ft. to produce an indicative estimate.
-
-## ⚠️ Important Note
-
-EstateIQ is an **analytics and portfolio project**, not a certified property appraisal system.
-
-Predictions are based on patterns in the analyzed dataset. Actual property values can vary because of:
-
-- Exact locality
-- Building quality
-- Property condition
-- Amenities
-- Road access
-- Legal status
-- Developer reputation
-- Market timing
-- Negotiation
-- Other micro-location factors
-
-Use the valuation as an analytical estimate rather than a guaranteed transaction price.
-
-## 🛠️ Technology Stack
-
-| Area | Technology |
-|---|---|
+| Layer | Technologies |
+|:---|:---|
 | Language | Python |
 | Data Processing | Pandas, NumPy |
 | Visualization | Matplotlib, Seaborn, Plotly |
@@ -475,9 +548,11 @@ Use the valuation as an analytical estimate rather than a guaranteed transaction
 | Database | SQLite |
 | Dashboard | Streamlit |
 | Notebook | Jupyter |
-| Spreadsheet | OpenPyXL |
+| Spreadsheet Processing | OpenPyXL |
 
-## 📦 Requirements
+---
+
+# 📦 Requirements
 
 ```text
 pandas
@@ -496,26 +571,59 @@ jupyter
 openpyxl
 ```
 
-Install:
+Install with:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 🎯 Objective
+---
+
+# ⚠️ Valuation Disclaimer
+
+EstateIQ is an **analytics and portfolio project**, not a certified property appraisal system.
+
+The model learns patterns from the analyzed dataset and produces an indicative estimate. Actual property prices can vary based on:
+
+- Exact locality
+- Building quality
+- Property condition
+- Amenities
+- Road access
+- Legal status
+- Developer reputation
+- Market timing
+- Negotiation
+- Other micro-location factors
+
+The valuation should therefore be treated as an **analytical estimate**, not a guaranteed transaction price.
+
+---
+
+# 🏁 Project Outcome
 
 EstateIQ demonstrates how real-estate data can be transformed into a complete analytical product:
 
-**Data → Cleaning → EDA → SQL → Insights → ML → Dashboard**
+> **Raw Data → Data Quality → EDA → SQL → Insights → ML → Model Interpretation → Valuation → Dashboard**
 
-The project focuses not only on prediction, but also on understanding the market, validating the data, communicating findings visually, and delivering an interactive analytical application.
+The project focuses not only on prediction, but also on **understanding the market, validating the data, communicating findings visually, and delivering an interactive analytical application**.
+
+---
 
 ## 👤 Author
 
-**Devendra Upadhyay**
+### Archi Yadav
 
-Data Analytics · Python · SQL · Machine Learning · Data Visualization
+**Data Analytics · Python · SQL · Machine Learning · Data Visualization**
 
-## 📄 License
+---
 
-This project is intended for educational, portfolio, and analytical purposes.
+<p align="center">
+  <a href="https://estateiq-real-estate-analytics-aygg3xukbui6tevqxrrts3.streamlit.app/">
+    <strong>🚀 Explore the Live EstateIQ Dashboard</strong>
+  </a>
+</p>
+
+<p align="center">
+  Built as a portfolio project focused on practical real-estate analytics and machine learning.
+</p>
