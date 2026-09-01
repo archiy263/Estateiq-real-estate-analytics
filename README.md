@@ -1,9 +1,18 @@
-# 🏛️ EstateIQ
-
-### Real Estate Analytics & Property Valuation Platform
+# **🏛️ EstateIQ**
 
 <p align="center">
-  <strong>From raw property listings to market intelligence and ML-powered valuation.</strong>
+  <strong>Real Estate Analytics & Property Valuation Platform</strong>
+</p>
+
+<p align="center">
+  <em>Turning property data into market intelligence, actionable insights, and ML-powered valuation.</em>
+</p>
+
+<p align="center">
+  <strong>22,139 Listings</strong> &nbsp;•&nbsp;
+  <strong>17 Locations</strong> &nbsp;•&nbsp;
+  <strong>8 Property Types</strong> &nbsp;•&nbsp;
+  <strong>Random Forest</strong>
 </p>
 
 <p align="center">
@@ -22,9 +31,9 @@
 
 ---
 
-## ✦ Overview
+## ✦ Project Overview
 
-**EstateIQ** is an end-to-end real-estate analytics and machine-learning project built around **22,139 property records across 17 locations and 8 property categories**.
+**EstateIQ** is an end-to-end real-estate analytics and machine-learning platform built around **22,139 property records across 17 locations and 8 property categories**.
 
 The project goes beyond simply training a prediction model. It combines **data cleaning, exploratory analysis, SQL market intelligence, statistical analysis, machine learning, model interpretation, and an interactive Streamlit dashboard** into one complete workflow.
 
