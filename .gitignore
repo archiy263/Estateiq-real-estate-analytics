@@ -1,0 +1,56 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+
+# Local Streamlit files
+.streamlit/secrets.toml
+
+# Notebook-generated exports
+*.html
+
+# Excel temporary files
+~$*.xlsx
+~$*.xls
+
+# Keep important project assets
+!assets/
+!assets/charts/
+!assets/charts/*.png
