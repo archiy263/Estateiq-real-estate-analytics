@@ -2,6 +2,43 @@
 
 > An end-to-end real estate analytics platform combining data quality, EDA, SQL market intelligence, machine learning, and an interactive Streamlit valuation dashboard.
 
+<p align="center">
+  <a href="https://estateiq-real-estate-analytics-aygg3xukbui6tevqxrrts3.streamlit.app/">
+    <img src="https://img.shields.io/badge/🚀%20Live%20Dashboard-View%20EstateIQ-FF4B4B?style=for-the-badge" alt="Live Dashboard">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://estateiq-real-estate-analytics-aygg3xukbui6tevqxrrts3.streamlit.app/">
+    <strong>🔴 Open Live EstateIQ Dashboard →</strong>
+  </a>
+</p>
+
+## 🌐 Live Dashboard
+
+Explore the deployed EstateIQ application:
+
+<p align="center">
+  <a href="https://estateiq-real-estate-analytics-aygg3xukbui6tevqxrrts3.streamlit.app/">
+    <img src="https://img.shields.io/badge/🚀%20Launch%20EstateIQ%20Dashboard-FF4B4B?style=for-the-badge" alt="Launch EstateIQ Dashboard">
+  </a>
+</p>
+
+The live dashboard provides an interactive view of:
+
+- 🏠 Property valuation
+- 📊 Market analytics
+- 📍 City-level pricing
+- 🏢 Property-type analysis
+- 📐 Area and price relationships
+- 🛏️ Bedroom-level analysis
+- 🤖 Model performance
+- 🔎 Feature importance
+- 💡 Data-driven market insights
+
+**Live Application:**  
+https://estateiq-real-estate-analytics-aygg3xukbui6tevqxrrts3.streamlit.app/        
+
 ## ✨ Highlights
 
 - 📊 Analysis of **22,139 property records**
@@ -172,48 +209,77 @@ The dashboard provides:
 
 ## 📊 Market Analytics
 
-### City-Level Price Comparison
+EstateIQ uses a focused set of visualizations to explain market supply, pricing, property composition, feature relationships, and model behavior.
+
+### 🏙️ Market Supply by City
 
 <p align="center">
-  <img src="assets/charts/city_price_comparison.png" width="900">
+  <img src="notebooks/assets/charts/01_market_supply_by_city.png" width="900">
 </p>
 
-### Property Type Distribution
+Gurgaon and Hyderabad account for the largest share of property listings in the dataset, providing the strongest representation of the analyzed markets.
+
+### 💰 Median Property Price by City
 
 <p align="center">
-  <img src="assets/charts/property_type_distribution.png" width="900">
+  <img src="notebooks/assets/charts/02_median_price_by_city.png" width="900">
 </p>
 
-### Area vs Price Relationship
+The city-level comparison highlights substantial differences in observed median price per square foot across locations.
+
+### 🏢 Property Market Composition
 
 <p align="center">
-  <img src="assets/charts/area_price_relationship.png" width="900">
+  <img src="notebooks/assets/charts/03_property_market_composition.png" width="900">
 </p>
 
-### Bedroom-Level Price Analysis
+Residential Apartments form the dominant property category, followed by Residential Land and Independent/Builder Floor listings.
+
+### 📈 Property Price Distribution
 
 <p align="center">
-  <img src="assets/charts/bedroom_price_analysis.png" width="900">
+  <img src="notebooks/assets/charts/04_price_distribution.png" width="900">
 </p>
 
-### Price Band Distribution
+The distribution shows how observed property prices are concentrated across different price-per-square-foot ranges.
+
+### 📐 Area vs. Price Relationship
 
 <p align="center">
-  <img src="assets/charts/price_band_distribution.png" width="900">
+  <img src="notebooks/assets/charts/05_area_price_density.png" width="900">
 </p>
 
-### Model Feature Importance
+The visualization explores the relationship between property area and observed price per square foot across the dataset.
+
+### 🛏️ Bedroom-Level Market Comparison
 
 <p align="center">
-  <img src="assets/charts/feature_importance.png" width="900">
+  <img src="notebooks/assets/charts/06_bedroom_market_comparison.png" width="900">
 </p>
 
+Bedroom-level analysis compares market supply and median pricing across different bedroom configurations.
+
+### 🗺️ City × Property Type Pricing Matrix
+
+<p align="center">
+  <img src="notebooks/assets/charts/07_city_property_type_matrix.png" width="900">
+</p>
+
+The matrix highlights how observed median prices vary simultaneously by location and property category.
+
+### 🤖 Model Feature Importance
+
+<p align="center">
+  <img src="notebooks/assets/charts/08_model_feature_importance.png" width="900">
+</p>
+
+The model analysis shows which property and location features contribute most strongly to the Random Forest valuation model.
 ## 📈 Visual Analytics
 
 Presentation-ready charts are stored in:
 
 ```text
-assets/charts/
+notebooks/assets/charts/
 ```
 
 The main analytical visuals include:
@@ -273,10 +339,6 @@ EstateIQ-real-estate-analytics/
 ├── run_sql.py
 ├── estateiq_database.py
 │
-├── assets/
-│   └── charts/
-│       └── *.png
-│
 ├── data/
 │   ├── processed/
 │   │   └── estateiq_processed.csv
@@ -286,7 +348,17 @@ EstateIQ-real-estate-analytics/
 │   └── property_valuation_rf.pkl
 │
 ├── notebooks/
-│   └── ...
+│   ├── estateiq_analysis.ipynb
+│   └── assets/
+│       └── charts/
+│           ├── 01_market_supply_by_city.png
+│           ├── 02_median_price_by_city.png
+│           ├── 03_property_market_composition.png
+│           ├── 04_price_distribution.png
+│           ├── 05_area_price_density.png
+│           ├── 06_bedroom_market_comparison.png
+│           ├── 07_city_property_type_matrix.png
+│           └── 08_model_feature_importance.png
 │
 └── sql/
     ├── 01_data_quality.sql
@@ -295,8 +367,7 @@ EstateIQ-real-estate-analytics/
     ├── 03_location_analysis.sql
     ├── 04_property_analysis.sql
     └── 05_business_insights.sql
-```
-
+```        
 ## ⚙️ Installation
 
 ### 1. Clone
